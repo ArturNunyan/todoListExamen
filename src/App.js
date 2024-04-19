@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import InputList from "./components/InputList";
+import InputListCons from "./components/InputListCons";
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="gray">
+        <h1>Should i eat at McDonalds ?</h1>
+      </div>
+      <div className="mid">
+        <div className="floatLeft">
+          <h3>PROS</h3>
+        </div>
+        <div className="floatRight">
+          <h3>CONS</h3>
+        </div>
+      </div>
+      <div className="pros">
+        <InputList />
+      </div>
+      <div className="cons">
+        <InputListCons />
+      </div>
     </div>
   );
 }
