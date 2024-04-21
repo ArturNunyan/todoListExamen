@@ -11,7 +11,7 @@ function InputList() {
     if (value === '' && index !== newInputs.length - 1) {
       newInputs.splice(index, 1);
       setInputs(newInputs);
-    } else if (index === newInputs.length - 1 && value !== '') {
+    } else if (index === newInputs.length - 1 && value !== '' && (/^\S+$/.test(value))) {
       setInputs([...newInputs, '']);
     }
   };
